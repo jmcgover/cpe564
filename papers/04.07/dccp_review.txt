@@ -1,0 +1,9 @@
+Reviewer's Name: Jeff McGovern
+Paper Title: Designing DCCP - Congestion Control Without Reliability
+Provide a short summary of the paper: In this paper, the authors describe the design decisions behind DCCP the Datagram Congestion Control Protocol, an attempt to build congestion control into unreliable, UDP-like connections.
+What are the strengths of the paper? (1-3 sentences): The authors provide good insight into the various tradeoffs made when building and iterating upon DCCP. DCCP seems like a promising new connection type that may be very useful, by adding a method of load balancing for an increasingly common type of connection.
+What are the weaknesses of the paper? (1-3 sentences): The authors, admittedly, set the bar for security in DCCP very low. TCP may be an acceptable lower end to aspire to, but it lacks ambition in a world where security is becoming ever-important.
+Overall paper merit (1 [worst] - 10 [best] ): 7
+Provide detailed comments (expand on strengths/weaknesses; >= 2 paragraphs): DCCP appears to be a promising new data transmission protocol. Use of unreliable connections are increasing in number and kind, making DCCP an important first step into mitigating volleys of traffic in a standard way.
+
+When implementing DCCP, the authors appear to hold back and refrain from becoming too ambitious with the protocol. While the ability to utilize nearly any congestion control algorithm is encoded into the protocol, a clear want and need for security is expressed, yet unaddressed in the protocol. It may be true that TCP, the current "big kid on the block," severely lacks any strong security measures, but this may be the time to push the securability with the new transmission protocol.
