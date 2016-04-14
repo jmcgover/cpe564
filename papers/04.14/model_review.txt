@@ -1,0 +1,26 @@
+Reviewer's Name: Jeff McGovern
+Paper Title: 
+Scalability and Accuracy in a Large-Scale Network Emulator
+
+Provide a short summary of the paper:
+The authors in this paper discuss the design, execution, and accuracy of an internet emulator called ModelNet. ModelNet can simulate routing protocols on network topologies with nodes numbering in the 10,000's on commodity hardware.
+
+What are the strengths of the paper? (1-3 sentences):
+ModelNet's system requirements, ability to execute any binary, and mitigation of execution difficulties make it a powerful tool for researching network topologies.
+
+What are the weaknesses of the paper? (1-3 sentences):
+A notion of accuracy is never clearly specified, making it difficult to gauge what the authors mean when they say their execution is 100% accurate. Justifications for certain relevant limitations are completely absent. What type of projects this tool is useful for is never explained and only vague terminology hints at what it may be.
+
+Overall paper merit (1 [worst] - 10 [best] ):
+4
+
+Provide detailed comments (expand on strengths/weaknesses; >= 2 paragraphs):
+ModelNet appears to be a powerful tool to simulate theoretical network topologies. The ability to create virtual nodes and connect them in such a way that they can send data in order to resemble a network on simple, commodity hardware can be very useful.
+
+A very important aspect of this software is its accuracy. The authors spend a lot of time talking about the implementation of the emulator on the computers --- wirht regards to scheduling priority, CPU instructions per second, and number of simulated packets it can send at a time --- but they present little about a model of accuracy that gives ModelNet credibility. Sure, some results from a another paper are replicated, but they never perform a side-by-side comparison of a real network flow and a simulated one on their network. From the beginning, they mention accuracy, but never define how their ``expected'' per-packet delay is determined.
+
+Certain justifications, primarily the 1Gb/s bandwidth upper bound and their ``1ms worst-case error'' in packet accuracy are given zero justification. Any justification is better than ``. . . we believe this level of bandwidth to be sufficient . . .'' or ``. . . we consider [1ms] to be acceptable for our wide-area experiments.'' These days, 10 gigabit connections are entering the upper prosumer market, while enterprise servers are likely working towards an order of magnitude higher. 
+
+Coupled with a lack of explanation for expected values and the use of the phrase ``Internet-like'' conditions, it's unclear where ModelNet fits in the scheme of research. How simulated are these networks? Are they simulating representations of networks? Are there traces of packet flow with timestamps that the simulations are compared against? Or are the values precomputed based off of the representative network created? Is this relevant to the industry or just academia?
+
+The conclusion states that a case study for an ad-hoc wifi has been presented, but the Case Studies section only mentions that it will not be discussed in this paper.
