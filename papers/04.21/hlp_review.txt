@@ -1,0 +1,26 @@
+Reviewer's Name: 
+Jeff McGovern
+
+Paper Title:
+HLP - A Next Generation Inter-domain Routing Protocol
+
+Provide a short summary of the paper:
+HLP is a hybrid protocol that attempts to replace BGP as an inter-domain routing protocol. By using a hybrid approach, wherein HLP employs a link-state protocol along commonly the established provider-customer and a path vector protocol between AS peers, HLP improves churn rate and isolates the effects of routing updates considerably.
+
+What are the strengths of the paper? (1-3 sentences):
+The authors provide an acceptable overview of and comparison between HLP and BGP. HLP appears to be a well thought out protocol that can do precisely what the authors intended --- offer a starting point for debates about next-generation routing protocols.
+
+What are the weaknesses of the paper? (1-3 sentences):
+Some of the wording could be more concise and straightforwardly presented. Experimental observations could use some clarification. 
+
+Overall paper merit (1 [worst] - 10 [best] ):
+7
+
+Provide detailed comments (expand on strengths/weaknesses; >= 2 paragraphs):
+HLP seems to be a great start to a new avenue of routing protocols. Designing efficiently for the common case is the approach that many aspects of networking strive for and the fact that HLP, at least in simulation, wildly outperforms BGP in the common case is a strong case for looking into new protocols. 
+
+A cleaner presentation would be nice. Certain phrases and words feel like jargon and are used about half a dozen times before they're formally defined, forcing me to sift through multiple uses before I find the meaning dropped somewhere in the middle of some paragraph. Some ideas are reiterated throughout for flow of conversation, which is fine, but presenting key concepts early on in a designated area might make it easier to avoid redundancy and the jargony feel.
+
+The experimental results look promising, but are difficult to understand. Why are the authors looking at 50% of the data? What 50% is it? What happens to the other 50%?
+
+Only two typos are apparent. Paragraph 1 of Section 2.1 mentions five requirements, but I onlt see 4. A table in Section 3.5.1 references Table 3.5.1 when it should reference Table 2.
