@@ -1,0 +1,24 @@
+Reviewer's Name: 
+Jeff McGovern
+
+Paper Title:
+HAIR - Hierarchical Architecture for Internet Routing
+
+Provide a short summary of the paper:
+HAIR  is a proposed inter domain routing protocol that slices the internet into three layers --- edge hosts, intermediate routes, and core domains. The authors posit that partitioning the internet into these three spaces can make routing tables smaller and limit routing updates.
+
+What are the strengths of the paper? (1-3 sentences):
+The authors present the ideas in a very straightforward and structured way, making it a nice, understandable read.
+
+What are the weaknesses of the paper? (1-3 sentences):
+The paper could do a better job convincing the reader that this is a viable option if it could provide more detail and numbers grounding why the HAIR approach will actually be better. Additionally, inconclusive experimentation is either unconvincing, or invites scrutiny into approach.
+
+Overall paper merit (1 [worst] - 10 [best] ):
+5
+
+Provide detailed comments (expand on strengths/weaknesses; >= 2 paragraphs):
+The structure of the paper is very well done. It is concise, bulleted, and clear without becoming too conversational or rambling. Such structure made it easy to follow and digest.
+
+This, however, may be its downfall. The arguments for this approach while present, are limited. More numbers citing why this approach should be considered would benefit the paper.
+
+The largest grievance might be the experimentation. Understandably, the authors simulated the test and had to write the code in user space. Unfortunately, that approach denied them any usable results. Such restriction of operating system privilege makes it difficult to perform a lot of computation at the host, but maybe pushing so much of the computation to the host will be a poor approach when implementing HAIR in the real world. The authors did not address this potential flaw, nor did they provide any argument for why pushing the code to kernel space will fix it.
