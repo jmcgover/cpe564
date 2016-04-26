@@ -1,0 +1,24 @@
+Reviewer's Name: 
+Jeff McGovern
+
+Paper Title:
+LTE Radio Analytics Made Easy and Accessible
+
+Provide a short summary of the paper:
+Researchers from MIT develop a system to measure in time and space various metrics pertaining to LTE upload and download utilization, devoid of any necessary information from LTE providers or customers and operating at the PHY layer.
+
+What are the strengths of the paper? (1-3 sentences):
+The authors present a very useful, cost-effective tool to perform real-world LTE analysis without needing any additional tools or access from LTE providers. Empirical validation is really good.
+
+What are the weaknesses of the paper? (1-3 sentences):
+Some parts of the paper warrant more discussion. There is potentially a typo.
+
+Overall paper merit (1 [worst] - 10 [best] ):
+9
+
+Provide detailed comments (expand on strengths/weaknesses; >= 2 paragraphs):
+LTEye is a pretty incredible tool that has many uses in, at the very least, quality of service. As a research tool, this can answer a lot of questions and hopefully create more. Empirical validation did what it should --- compared the LTEye calculated values with the observed values.
+
+Many pieces of this paper warrant more discussion, but not in this paper. The modifications to SAR and using the path of minimum delay for better spatial accuracy, along with a slew of experiments and derivations, could be a paper on its own. As it stands, LTEye is a very cool contribution to the field.
+
+The last paragraph of Section 3.a mentions the frequency component of the source blocks span 180 kHz, when the Figure it refers to describes 80kHz.
