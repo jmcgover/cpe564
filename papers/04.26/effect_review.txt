@@ -1,0 +1,24 @@
+Reviewer's Name: 
+Jeff McGovern
+
+Paper Title:
+An In-depth Study of LTE - Effect of Network Protocol and Application Behavior Performance
+
+Provide a short summary of the paper:
+The authors of the paper provide an in depth overview of data collected from an LTE provider over the period of 240 hours, describing the data in terms of TCP flow rate, network latency, and queuing delay and retransmission rate, as well as revealing TCP abnormalities. Also included is a description of a method of passive bandwidth estimation and experimental validation on it.
+
+What are the strengths of the paper? (1-3 sentences):
+The paper provides a highly relevant, unique characterization of a large amount of data. It is unique in that the dat ais a veritable trove and they comb through many parts, discovering a few glaring issues with current TCP practices over LTE.
+
+What are the weaknesses of the paper? (1-3 sentences):
+Some assumptions made feel arbitrarily justified. Certain figures are unclear, failing to pass the show-don't-tell rule. The description of the data reads like a wall of text.
+
+Overall paper merit (1 [worst] - 10 [best] ):
+6
+
+Provide detailed comments (expand on strengths/weaknesses; >= 2 paragraphs):
+The paper provides a deep look into a very large trace of data obtained from an unspecified ISP. They address aspects of the data that affect issues such as energy consumption and utilization that are very important to ISPs, making the paper very relevant. The dataset is also an incredible find.
+
+Some of the values for cutoffs used felt arbitrary. For example, the process for defining unique users was justified because varying the cutoff time didn't change the data noticeably for a very small range of hours. No other argument, namely in the change of the number of ``users'' was used to drive that argument. 
+
+Generally, the ``insight'' the paper provides is more like a description of the data making up the figures with a sentence or two of commentary afterward. It read like a wall of text put together to simply justify the graphs provided. Certain graphs, specifically Figure 15 and 16, were meant to be comparisons, but, while they were aligned left-right, they did not have the same axes, values, or scale, leaving it to the text to tell us what's important instead of just showing us. The paper didn't lack structure, but it could certainly do with some more of it.
