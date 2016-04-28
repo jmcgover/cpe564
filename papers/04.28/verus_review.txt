@@ -1,0 +1,22 @@
+Reviewer's Name: 
+Jeff McGovern
+
+Paper Title:
+Adaptive Congestion Control for Unpredictable Cellular Networks
+
+Provide a short summary of the paper:
+This paper presents the design and experimentation of Verus, an adaptive congestion control protocol built specifically to address the millisecond variations in cellular connectivity that affect performance that also incorporates the building of delay profiles that act on the order of seconds to factor in more long term affect of network connectivity.
+
+What are the strengths of the paper? (1-3 sentences):
+The authors do a great job presenting the idea behind Verus, justifying each step along the way with reasoned assumptions. Furthermore, their real-world and simulated experimentation and the presentation thereof drive home how well Verus performs.
+
+What are the weaknesses of the paper? (1-3 sentences):
+The authors may want to provide a stronger argument for why linear predictors do not perform well.
+
+Overall paper merit (1 [worst] - 10 [best] ):
+8
+
+Provide detailed comments (expand on strengths/weaknesses; >= 2 paragraphs):
+The authors do a great job explaining Verus and showing how it works. It seems like Verus handle congestion control from the right motivation --- predicting when congestion is about to happen instead of reacting. Much of the experimentation is, understandbly, simulated, but there is a satisfactory amount of real world tests to validate it. And Verus appears to work reasonably well.
+
+Verus may warrant more discussion on linear predictors. The researchers only investigated two admittedly simple linear predictors with limited success. Since the non-linear, cubic spline profiling method they use doesn't respond well to smaller variations, it is likely unecessary. That being said, a small discussion on why more complex linear predictors were wholly disregarded may be warranted.
