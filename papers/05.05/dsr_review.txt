@@ -1,0 +1,25 @@
+Reviewer's Name: 
+Jeff McGovern
+
+Paper Title:
+DSR The Dynamic Source Routing Protocol for Multi-Hop Wireless Ad Hoc Networks
+
+Provide a short summary of the paper:
+DSR is an on-demand, ad-hoc mobile network routing protocol designed to learn routes on the fly and re-learn routes as needed in the case of network issues. It provides numerous optimizations, including route caching on source and intermediate nodes in order to improve route lookup, route shortening, and packet salvaging, can integrate into the internet, and handles multiple interfaces on nodes.
+
+What are the strengths of the paper? (1-3 sentences):
+DSR is a straightforward, well engineered, and seemingly performant routing algorithm that appears to handle mobile networks very well. 
+
+What are the weaknesses of the paper? (1-3 sentences):
+The paper could use a few minor points of clarity, including an explanation or some examples of mobile networking.
+
+Overall paper merit (1 [worst] - 10 [best] ):
+8
+
+Provide detailed comments (expand on strengths/weaknesses; >= 2 paragraphs):
+
+DSR is a very well thought out protocol. It is straightforward to explain and is designed to handle many of the issues that may come up with such an ad-hoc network.
+
+What isn't entirely clear to me after reading this paper is the use case. I understand wireless networks and their issues, but what does ``mobile'' mean in this context? Maybe it's a result of the paper coming out before mobile phones became commonplace, because mobile phones don't all participate in the transmission of packets. Amateur Radio, a subset of the devices of which are generally mobile, is a somewhat clear application for DSR via APRS, though it may not work with the fairly slow network speed and possibly high mobility that radios are used in (driving down a highway, for instance). 
+
+What does it mean to move moderately with respect to packet transmission latency? So packet latency is in the 10's of milliseconds --- what is a moderate speed? Is it mainly the case that the nodes are picked up and moved to a different area? Understanding the use cases can ground a lot of the decisions made and benefits achieved.
