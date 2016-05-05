@@ -1,0 +1,28 @@
+Reviewer's Name: 
+Jeff McGovern
+
+Paper Title:
+`Ad-Hoc On Demand Distance Vector Routing
+
+Provide a short summary of the paper:
+In this paper, the authors describe their ad-hoc, on demand routing protocol. Each node in the mobile network builds a routing table once it has been used to send a data packet. Using sequence numbers, AODV is able to supercede stale routes.
+
+What are the strengths of the paper? (1-3 sentences):
+The routing technique tracks paths in a very scalable way, which is a huge benefit, compared to something like DSR. When the wireless/mobile technology is around to be able to leverage that, it will be very useful.
+
+What are the weaknesses of the paper? (1-3 sentences):
+The paper lacks structure, making it difficult to follow and unclear how the algorithm actually works.. There were only simulations performed, no real-world simulations, even on a small network. It's unclear whether the broadcasting of updates affects the performance of the network.
+
+Overall paper merit (1 [worst] - 10 [best] ):
+6
+
+Provide detailed comments (expand on strengths/weaknesses; >= 2 paragraphs):
+One huge advantage that AODV has for ad-hoc networks is scalability. The tracking of the routes is done intelligently by having each node keep track of (as far as I can tell) the next hop.
+
+The structure of this paper is poorly done. After reading it, it's unclear to me how exactly the algorithm works. The authors ramble about a lot of what it _can_ do, or _might_ do, but it isn't clear when. Similarly, the results are haphazardly placed together and it's difficult to figure out the point of the results.
+
+Notably, Section 2.4 doesn't make any sense. It mentiones that nodes ``learn of their neohbors in one of two ways'' but I can only find one way mentioned, with a lot of extra explanation on the details of what happens in the first(?) way.
+
+Simulations create random motion for the tests, but never test stationary conditions, even for a baseline. At some point, it's mentioned that AODV is good for highly mobile conditions, but it isn't clear to me how they came to that conclusion, particularly when their is only an aggregate random set of movement speeds they went through. 
+
+Testing for 50, 100, and 1000 nodes is noble, but we aren't there yet in terms of wireless capabilities. That can test for scalability, but it would be nice to see real world results to see how viable it is with the technology as it exists today.
