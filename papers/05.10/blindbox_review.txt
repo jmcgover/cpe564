@@ -1,0 +1,26 @@
+Reviewer's Name: 
+Jeff McGovern
+
+Paper Title:
+BlindBox -Deep Packet Inspection over Encrypted Traffic
+
+Provide a short summary of the paper:
+BlindBox is a deep packet inspection (DPI) method that can perform most attack detection rules over encrypted data or, if there is ``probable cause'' via one of these encrypted detections, then the BlindBox can decrypt the data and perform more advanced detection methods, rounding out its capabilities to be able to detect all rules.
+
+What are the strengths of the paper? (1-3 sentences):
+The paper does a great job providing an overview of the necessary components, covering points that are crucial to understanding without going too far in depth and has a good structure. The protocol uses a unique blend of encryption techniques that ensure that it is possible for the data to stay encrypted, yet still detectable for attacks.
+
+What are the weaknesses of the paper? (1-3 sentences):
+It is misleading to say that BlindBox performs DPI on encrypted traffic when it has the ability to decrypt traffic if appropriate. The slow connection time of BlindBox may be prohibitive for normal use. Protocol III experimentation is very relevant to this paper, but waved off.
+
+Overall paper merit (1 [worst] - 10 [best] ):
+7
+
+Provide detailed comments (expand on strengths/weaknesses; >= 2 paragraphs):
+BlindBox seems to be a very useful protocol that guarantees security and some level of DPI. The performance in the non-transient state appears adequate and nothing about the implementation seem entirely specialized or radical, making adoption easy. Furthermore, the authors did a good job of explaining but not overexplaining the protocols used to build BlindBox and provided a readable structure.
+
+It is misleading to say that BlindBox performs DPI on encrypted traffic, when it actually performs basic DPI on encrypted traffic which can give it the ability to decrypt traffic to perform full inspection. The game theory style choice that the user has (Protocol I and II vs III) is an interesting way to frame it, but ultimately, in order to provide what the paper claims (a protocol that performs DPI), the data must actually be decrypted. This pretty much only happens in the summary parts of the paper.
+
+HTTPS connection setup time is egregiously slow. For an end user, even on 20Mbps, it will probably be noticeable, much more so for faster internet. Such is the way of security --- tradeoffs --- but it is a noticeable one here. This may be very useful for enterprise applications, but consumers might as well just use their own encryption (which I couldn't actually find any mention of).
+
+Protocol III results would be nice. It may be that my claim of a misleading summary may b unfounded because technically BlindBox only does Protocol I and II. Nevertheless, I and II only perform a subset of rule detection, specifically tokens and their offsets.
