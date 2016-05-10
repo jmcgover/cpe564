@@ -1,0 +1,22 @@
+Reviewer's Name: 
+Jeff McGovern
+
+Paper Title:
+Measuring IPv6 Adoption
+
+Provide a short summary of the paper:
+In this paper, the authors discuss the trends of IPv6 use over the past decade or so (2004-2014), touching on various aspects of the internet infrastructure and what might be contributing to it.
+
+What are the strengths of the paper? (1-3 sentences):
+The authors present a very rich discussion of the data, touching on the various layers of infrastructure and providing good graphs of the data discussed.
+
+What are the weaknesses of the paper? (1-3 sentences):
+Unsure how relevant and novel this paper is, considering how many other IPv6 adoption studies are out there. Not much rigor is applied to the data. Some biases of the datasets are introduced, but are all?
+
+Overall paper merit (1 [worst] - 10 [best] ):
+6
+
+Provide detailed comments (expand on strengths/weaknesses; >= 2 paragraphs):
+This paper has a lot of good discussion of IPv6 data. There is a lot of data to parse and it seems like the authors wrangled it appropriately and gave some keen insight into the nature of it. Assuming this paper is a fresh interpretation of IPv6 adoption, it may serve as a good resource for future studies research topics.
+
+Since I have no feeling for how many similar papers exist in the literature, I am unsure if this is worht publishing. Judging by its funding by the Department of Homeland Security, it probably is. Soem more rigor applied to the data would be beneficial. There was one use of the Spearman Rank Correlation and another mention of the second derivative, but more of that would be nice to see and would lend more credence to the data and the authors' interpretations. Furthermore, a discussion on the various limitations of the datasets would also benefit the paper, though I don't know if that's possible in the space allotted.
