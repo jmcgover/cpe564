@@ -1,0 +1,22 @@
+Reviewer's Name: 
+Jeff McGovern
+
+Paper Title:
+B4 - Experience with a Globally-Deployed Software Defined WAN
+
+Provide a short summary of the paper:
+Google engineers explain their design and implementation of B4, a between data center routing protocol.
+
+What are the strengths of the paper? (1-3 sentences):
+The authors do a fantastic job explaining the motivations behind the design and have great results. Also a welcome addition is the outage experience story at the end.
+
+What are the weaknesses of the paper? (1-3 sentences):
+More detail into the implementation would be nice.
+
+Overall paper merit (1 [worst] - 10 [best] ):
+8
+
+Provide detailed comments (expand on strengths/weaknesses; >= 2 paragraphs):
+The authors do a great job explaining the protocol. They don't get mired up in the details of the reasoning or try to present half proofs of their usefulness. The experience at the end is also a great addition, pointing out that many issues with SDN WANs are user error.
+
+More detail on the hardware and numbers would ground the data better. I can't think of what that may reveal of Google that they don't want us to know. It would be nice to see what sort of capabilities something like B4 has.
