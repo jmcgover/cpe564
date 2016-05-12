@@ -1,0 +1,23 @@
+Reviewer's Name: 
+Jeff McGovern
+
+Paper Title:
+Achieving High Utilization with Software-Driven WAN
+
+Provide a short summary of the paper:
+SWAN is a between datacenter switching protocol that breaks traffic into three types --- immediate, elastic, and background --- prioritizing them according to the nature of their transmission, and calculates which paths to take heuristically in a provably bounded time. 
+
+What are the strengths of the paper? (1-3 sentences):
+SWAN, when simulated, carries more traffic than protocols that fix a similar problem.
+
+What are the weaknesses of the paper? (1-3 sentences):
+Experiments were only simulated and 60% isn't actually all that much better, considering that it isn't clear how well it can handle the faster traffic they mention towards the end. Much of the paper could and should be simplified.
+
+Overall paper merit (1 [worst] - 10 [best] ):
+5
+
+Provide detailed comments (expand on strengths/weaknesses; >= 2 paragraphs):
+
+Much of the paper could and should be simplified, as it is difficult to follow for a paper that apparently relegates the proofs to more in depth technical papers. A lot of emphasis is placed on the provable boundedness of the, only to get a 60% speedup. Maybe SWAN is actually so complex that I couldnt' follow it. Is it worth it for 60% speedup? Can this actually scale, not with DC number, but with network speed? It isn't clear that it can, especially since the experimentation is simulated.
+
+It isn't clear how scratch space is implemented and how that affects performance. Is it cached in the NVRAM? On an SSD? Hard disk? If it's the hard disk, wouldn't that affect the latency? There seem to be a few concepts that are abstracted away. 
