@@ -1,0 +1,24 @@
+Reviewer's Name: 
+Jeff McGovern
+
+Paper Title:
+Packet-Level Telemetry in Large Datacenter Networks
+
+Provide a short summary of the paper:
+This paper discusses Everflow, a method of packet trace capture and analysis system built on commodity switches that can randomly sample the packets going through a large datacenter network and even play back and trace teh packets again.
+
+What are the strengths of the paper? (1-3 sentences):
+Everflow uses commodity switches, making it accessible, only samples the packets, making it scalable and tractable to analyze, and allows playback. Furthermore, the authors implemented the system and tested it.
+
+What are the weaknesses of the paper? (1-3 sentences):
+Some clarity on commodity switches would be useful, considering that it seems to be such an integral part ot making Everflow effective. It feels like more justification/validation may be possible. 
+
+Overall paper merit (1 [worst] - 10 [best] ):
+7
+
+Provide detailed comments (expand on strengths/weaknesses; >= 2 paragraphs):
+Everflow appears to be a very useful system. The case studies seem to show its effectiveness and the level of sampling it provides is useful.
+
+Clarification on ``commodity switches'' appears to be crucial here. Many businesses fall short of enterprise, but may still use enterprise level tools. When does commodity stop being commodity?
+
+Statistical justification of sampling feels possible with Everflow, based on populations and the sampling size. Why wasn't that touched on?
