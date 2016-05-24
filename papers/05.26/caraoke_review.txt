@@ -1,0 +1,22 @@
+Reviewer's Name: 
+Jeff McGovern
+
+Paper Title:
+Caraoke - An E-Toll Transponder Network for Smart Cities
+
+Provide a short summary of the paper:
+In this paper, the authors build a method of tracking civilians using the EX-Pass transponders in their car, giving totalitarian governments the ability to issue speeding tickets, red light violations, and, worst of all, charge parking fees completely remotely. All of this can be done with minimal additional infrastructure --- namely a PCB that sits atop light posts that can use collision detecting in the carrier frequency offset to locate individual transponders in space and time.
+
+What are the strengths of the paper? (1-3 sentences):
+This is a very well-performing method of tracking transponders with solid experimental validation. It is very well designed and thought out, to the point that it may be deployable.
+
+What are the weaknesses of the paper? (1-3 sentences):
+They never address the fact that some people will fight the tracking system, potentially making most justification useless.
+
+Overall paper merit (1 [worst] - 10 [best] ):
+9
+
+Provide detailed comments (expand on strengths/weaknesses; >= 2 paragraphs):
+Caraoke is an incredibly well built system. It uses solid maths to track transponders, all of which is experimentally validated. The researchers even went as far as to make it deployable and potentially marketable and producable, by designing it well for good power consumption and efficient transmission.
+
+Some may posit that there's an ethical dilemma. What actually is likely to happen, related to the ethical dilemma, is that people will easily just put their transponder in a box in their dashboard, potentially making Caraoke inaccurate or completely useless. Most do this anyway (I think the white EZ-Pass reflects in the windshield), but the tinfoil hat crowd may start making easily removable (to pay tolls) tinfoil hats to block the signal altogether, making most of these applications useless. This will worry people, yet the authors never address it.
