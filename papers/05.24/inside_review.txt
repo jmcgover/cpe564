@@ -1,0 +1,22 @@
+Reviewer's Name: 
+Jeff McGovern
+
+Paper Title:
+Inside the Social Network’s (Datacenter) Network
+
+Provide a short summary of the paper:
+This paper provides a somewhat detailed overview of a set of traces received from a Facebook datacenter, showcasing a practical, real-world example of network behavior in a moder day datacenter.
+
+What are the strengths of the paper? (1-3 sentences):
+The discussion is very informative and well articulated. Unlike other papers, it doesn't feel rambling and is commenting on real-world data.
+
+What are the weaknesses of the paper? (1-3 sentences):
+Facebook's datacenter topology seems to be unique, even to themselves (they mention updating their topology).
+
+Overall paper merit (1 [worst] - 10 [best] ):
+8
+
+Provide detailed comments (expand on strengths/weaknesses; >= 2 paragraphs):
+This paper feels much more relevant than other, similar papers giving a data overview of network traces. Other papers spent most of their time detailing the specifics of the graphs, while this one spoke more to the general nature, fitting it within the narrative of how the datacenters work at Facebook. I would argue for including this paper, primarily because it includes a real-world sampling of a datacenter, not simply a simulated or academic one. 
+
+On the other hand, Facebook's datacenter is straightforwardly-structured, in that whole racks are designated a single task. This may skew the results that they state differ from the existing literature, since other network topologies aren't necessarily structured the same way. Furthermore, there is motivation for datacenters to decentralize tasks to multiple racks, in case of localized physical failure, due to power outage, flood, or otherwise, calling into question how relevant it is that some of Facebook's results differ from the current literature.
