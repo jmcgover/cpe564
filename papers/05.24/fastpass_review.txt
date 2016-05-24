@@ -1,0 +1,22 @@
+Reviewer's Name: 
+Jeff McGovern
+
+Paper Title:
+Fastpass - a centralized zero-queue datacenter network
+
+Provide a short summary of the paper:
+This paper presents Fastpass, a decentralized packet queuing and routing system that claims low latency, high throughput, and fair allocation.
+
+What are the strengths of the paper? (1-3 sentences):
+The researchers actually test this on a real set of servers and appear to have good results, compared to TCP.
+
+What are the weaknesses of the paper? (1-3 sentences):
+It isn't clear what kind of datacenters this is useful for. Experimental results lack clear relevance.
+
+Overall paper merit (1 [worst] - 10 [best] ):
+6
+
+Provide detailed comments (expand on strengths/weaknesses; >= 2 paragraphs):
+Fastpass appears to be a great algorithm for achieving high throughput and fair packet management. Compared to TCP, the experimental results appear to be more stable and generally better.
+
+It isn't clear, however, what sort of datacenter Fastpass applies to. The experiment setup was a very straightforward web service pipeline, but the nature of which isn't clear and whether Fastpass is good for other types of services also isn't clear.
